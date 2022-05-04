@@ -17,7 +17,11 @@ async function handler(req, res) {
       cx: process.env.CSE,
       q: `carro ${q}`,
       searchType: "image",
-      num: 1,
+      num: 10,
+      hl: "pt-BR",
+      imgType: "photo",
+      imgColorType: "trans",
+      safe: "active",
     });
 
     if (response.data.items) {
